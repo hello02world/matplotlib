@@ -9,7 +9,7 @@ def pic( y ):
     print(y)
     fig = plt.figure()
     ax = fig.add_subplot(111)
-    ax.set(xlim=[0, 6000], ylim=[0, 100], title='An Example Axes',ylabel='Y-Axis', xlabel='X-Axis')
+    ax.set(xlim=[0, 6000], ylim=[0, 100], title='An Example Axes',ylabel='num', xlabel='price')
     plt.plot(x, y)
     plt.title("plot")
     plt.savefig("./picture/1.jpg")
@@ -62,6 +62,7 @@ def main():
         else:
             x[6] = x[6] + 1
     pic(x)
+    # web()
 
     print(lst)
     print(len(lst))
